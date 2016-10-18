@@ -1,0 +1,144 @@
+
+.iframe_video{
+	width: 100%;
+}
+.youtube-modals .modal{
+		padding: 0  !important;
+		.modal-content{
+			padding:0 !important;
+			background: transparent  !important;
+		}
+		.modal-body{
+			padding: 0  !important;
+		}
+	}
+.review-section{
+	@media (max-width: 767px){
+		.no-mobile{
+			padding-right: 0 !important;
+		}
+
+		.col-xs-12.text-center h2{
+			font-size: 22px;
+			margin-top: 24px;
+		}
+	}
+	.col-xs-12.text-center h2{
+		font-weight: 300;
+	}
+
+	.on-social{
+		h3.text-center{
+			@media (max-width: 767px){
+				margin:0 !important;
+			}
+		}
+	}
+
+	@media (max-width: 767px){
+		padding-top: 0;
+	}
+	.owl-carousel{
+		display: block;
+		display: block;
+		clear: both;
+		float: left;
+		overflow: hidden;
+		.owl-dots{
+			display: none !important;
+		}
+		&.on-instagram{
+
+			.col-xs-4.col-md-2 + .col-xs-4.col-md-2{
+				display: none;
+				@media (max-width: 767px){
+					display: block;
+				}
+			}
+			.col-xs-4{
+				// width: 49.666667%;
+				width: 98.666667%;
+				@media (max-width: 767px){
+					width: 49.666667%;
+				}
+			}
+
+		}
+	}
+	.on-instagram,
+	.on-youtube{
+		.logos{
+				width: 43px;
+				position: absolute;
+				bottom: 23px;
+				right: 25px;
+				@media (max-width: 767px){
+					width: 6vw;
+					bottom: 4vw;
+					right: 5vw;
+				}
+			}
+		// @media (max-width: 767px){
+			// overflow-x: auto;
+			white-space: nowrap;
+			.col-xs-3{
+				padding: 5px;
+				// width: 32%;
+				// @media (max-width: 767px){****************************************************
+				// 	width: 100%;
+				// }
+			}
+		// }
+		img{
+			width: 100%;
+		}
+		.col-xs-4,
+		.col-xs-2{
+			padding: 5px;
+		}
+	}
+
+	.on-youtube{
+		// @media (max-width: 767px){
+			.col-xs-5{
+				width: 100%;
+				padding: 5px;
+			// }
+		}
+	}
+
+	.review-single{
+		.avatar{
+			border-radius: 50%;
+			overflow: hidden;
+		}
+		.fa-star{
+			color: #f1c627;
+			-webkit-text-fill-color: #f1c627;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #a98b1e;
+		}
+	}
+
+	.review-single{
+		margin-bottom: 25px;
+		float: left;
+	}
+	.row.review-bg.white-bg{
+		h3{
+			padding-bottom: 24px;
+			padding-top: 0;
+		}
+	}
+
+	.customer-images{
+		img{
+			width: 100%;
+		}
+		.col-xs-6{
+			padding: 5px;
+		}
+	}
+
+
+}

@@ -1,0 +1,337 @@
+.vip-list-section {
+    .vip-section-inner {
+        &.rap-landing {
+            h4 {
+                font-size: 18px;
+                font-weight: 900;
+
+                @include media(">=tablet") {
+                    font-size: 28px;
+                }
+            }
+
+            p {
+                @include media(">=tablet") {
+
+                }
+
+                &.strong {
+                    margin-bottom: 5px;
+
+                    @include media(">=tablet") {
+                        font-size: 21px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.landing-block {
+    text-align: center;
+
+    @include media(">=tablet") {
+        text-align: left;
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    h4 {
+        color: #484848;
+        font-size: 18px;
+        line-height: 1.22;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+
+        @include media(">=tablet") {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: #747474;
+        font-size: 14px;
+        line-height: 1.43;
+        font-weight: 400;
+
+        @include media(">=tablet") {
+            font-size: 18px;
+        }
+
+        &.margin-bottom {
+            margin-bottom: 25px;
+
+            @include media(">=tablet") {
+                margin-bottom: 16px;
+            }
+        }
+
+        &.strong {
+            color: #484848;
+            font-size: 16px;
+            line-height: 1.19;
+            font-weight: 700;
+            margin-bottom: 7px;
+
+            @include media(">=tablet") {
+                font-size: 21px;
+            }
+        }
+
+        &.big {
+            font-size: 16px;
+            line-height: 1.25;
+            font-weight: 700;
+            margin-bottom: 5px;
+
+            @include media(">=tablet") {
+                font-size: 21px;
+            }
+        }
+    }
+
+    .thanks-block {
+        .block-inner-hold {
+            padding: 30px 9999px 25px;
+            margin: 0 -9999px;
+
+            @include media(">=tablet") {
+                padding-top: 45px;
+                padding-bottom: 40px;
+            }
+
+            @include media(">=widescreen") {
+                padding-top: 60px;
+                padding-bottom: 55px;
+            }
+
+            & + .block-inner-hold {
+                border-top: 1px solid #cfcfcf;
+            }
+
+            &.faq {
+                text-align: left;
+            }
+        }
+    }
+}
+
+ul.bullet-list {
+    @extend %listreset;
+    padding-bottom: 15px;
+    text-align: left;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    li {
+        position: relative;
+        padding-left: 11px;
+        font-size: 14px;
+        line-height: 1.43;
+        color: #747474;
+
+        @include media(">=tablet") {
+            font-size: 18px;
+            padding-left: 15px;
+        }
+
+        & + li {
+            margin-top: 5px;
+        }
+
+        &:before {
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #747474;
+            border-radius: 50%;
+            left: 0;
+            top: 7px;
+
+            @include media(">=tablet") {
+                width: 8px;
+                height: 8px;
+                top: 8px;
+            }
+        }
+    }
+}
+
+ul.buttons-list {
+    @extend %listreset;
+    @extend %clearfix;
+    margin: 0 -2px;
+
+    @include media(">=tablet") {
+        margin: 0 -15px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        line-height: 21px;
+        border: 0;
+        padding: 9px;
+        height: auto;
+
+        &.btn-primary {
+            line-height: 19px;
+            border: 1px solid #db2e2e;
+            background: #f3f3f3;
+            color: #db2e2e;
+
+            &:hover {
+                background: darken(#f3f3f3, 10%);
+            }
+        }
+
+        @include media(">=tablet") {
+            min-width: 160px;
+            font-size: 21px;
+            line-height: 25px;
+            padding: 10px;
+
+            &.btn-primary {
+                line-height: 23px;
+            }
+        }
+
+        @include media(">=desktop") {
+            min-width: 200px;
+        }
+    }
+
+    li {
+        width: 50%;
+        float: left;
+        padding: 5px 15px;
+
+        @include media(">=tablet") {
+            width: auto;
+        }
+    }
+
+    &.alternate {
+        margin: 0;
+
+        @include media(">=tablet") {
+            margin: 0 -15px;
+        }
+
+        @include media(">=desktop") {
+            margin: 0 -17px;
+        }
+
+        li {
+            width: 50%;
+            padding: 5px 15px;
+
+            @include media(">=desktop") {
+                padding: 0 17px;
+            }
+        }
+
+        .btn {
+            min-width: 0;
+            display: block;
+            font-size: 14px;
+            line-height: 17px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            @include media(">=tablet") {
+                font-size: 16px;
+                line-height: 19px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            &.btn-primary {
+                padding-top: 4px;
+                padding-bottom: 4px;
+
+                @include media(">=tablet") {
+                    padding-top: 9px;
+                    padding-bottom: 9px;
+                }
+            }
+        }
+    }
+}
+
+.landing-items {
+    @extend %listreset;
+
+    li {
+        margin: 0 -9999px;
+        padding: 30px 9999px 15px;
+        background: #fff;
+
+        @include media(">=tablet") {
+            padding: 35px 9999px;
+        }
+
+        &:first-child {
+            border-top: 1px solid #cfcfcf;
+        }
+
+        &:last-child {
+            border-bottom: 1px solid #cfcfcf;
+        }
+
+        &:nth-child(even) {
+            background: #ffd23f;
+        }
+    }
+
+    .media-img {
+        padding-bottom: 18px;
+    }
+
+    .landing-item {
+        @include media(">=tablet") {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            padding: 15px 0;
+
+            > * {
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .media-img {
+                width: 166px;
+                padding: 0;
+            }
+
+            .media-desc {
+                padding: 15px 0 15px 30px;
+            }
+        }
+
+        @include media(">=widescreen") {
+            padding: 25px 0;
+        }
+    }
+
+    h5 {
+        color: #484848;
+        font-size: 18px;
+        line-height: 1.22;
+        text-transform: uppercase;
+        margin: 0 0 6px;
+        font-weight: 900;
+
+        @include media(">=tablet") {
+            font-size: 28px;
+        }
+    }
+}

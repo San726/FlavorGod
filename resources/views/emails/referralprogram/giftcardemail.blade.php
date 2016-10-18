@@ -1,0 +1,3 @@
+The following user just earned a giftcard bonus. - Customer ID: #{{ $customer->id }}, name: {{ $customer->first_name }}, lastname: {{ $customer->last_name }}, email: {{ $customer->payer_email }},
+address name: {{ $customer->address_name }}, address street: {{ $customer->address_street }}, address city: {{ $customer->address_city }},
+address state: {{ $customer->address_states }}, address country: {{ $customer->address_country }}

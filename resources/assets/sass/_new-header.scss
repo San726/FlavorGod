@@ -1,0 +1,28 @@
+.navbar-brand {
+  img {
+    @include media(">=tablet") {
+      max-width: 100px;
+      position: absolute;
+      left: 12px;
+      top: 15px;
+    }
+
+
+    @include media(">=desktop") {
+      max-width: 110px;
+    }
+
+
+    @include media(">=widescreen") {
+      max-width: 135px;
+      left: 16px;
+      top: 18px;
+    }
+  }
+}
+
+.navbar-nav > li {
+  @include media(">=tablet") {
+    padding: 20px;
+  }
+}
